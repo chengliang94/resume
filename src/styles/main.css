@@ -1,208 +1,25 @@
-
-#header {
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 45px;
-    line-height: 45px;
-    background: #6495ed;
-    padding: 0;
-    color: #eee;
-    font-size: 20px;
-    text-align: center;
-    font-weight: bold;
-    letter-spacing: 5px;
-}
-
-
-footer{
+.swiper-container {
         width: 100%;
-        height: 48px;
-        background:#6495ed;
-        position: fixed;
-        bottom: 0;
-        left: 0;
- }
-footer ul{
-            display: flex;
-            flex-direction: row;
-}
-footer ul li{
-            letter-spacing: 3px;
-            justify-content: center;
-            align-items: center;
-            flex:1;
-            display: flex;
-            color:white;
-            font-size:18px;
-            font-weight: 700;
-            flex-direction:row;
-            font-family: "黑体";
-            height: 100%;
- }
-
-
-#wrapper {
-    position: absolute;
-    z-index: 1;
-    top: 45px;
-    bottom: 48px;
-    left: 0;
-    width: 100%;
-    background: #ccc;
-    overflow: hidden;
-}
-
-#scroller {
-    position: absolute;
-    z-index: 1;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    width: 100%;
-    -webkit-transform: translateZ(0);
-    -moz-transform: translateZ(0);
-    -ms-transform: translateZ(0);
-    -o-transform: translateZ(0);
-    transform: translateZ(0);
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-text-size-adjust: none;
-    -moz-text-size-adjust: none;
-    -ms-text-size-adjust: none;
-    -o-text-size-adjust: none;
-    text-size-adjust: none;
-}
-
-#scroller ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    text-align: left;
-}
-
-#scroller li {
-    padding: 0 10px;
-    height: 40px;
-    line-height: 40px;
-    border-bottom: 1px solid #ccc;
-    border-top: 1px solid #fff;
-    background-color: #fafafa;
-    font-size: 14px;
-}
-#wrapper{
-   
-}
-#wrapper ul{
-    margin-top: 0;
-    background: url('../images/talk.jpg') no-repeat center;
-    background-size: cover;
-    padding: 0;
-}
-
-#my_ul{
-    width: 100%;
-    height:100%;
-}
-#my_ul li{
-     list-style: none;
-}
-#my_ul .my_li{
-    position: absolute;
-    top:20;
-    left:0;
-    width: 100%;
-    height:90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-#my_ul .my_li .my_skill{
-    font-size: 14px;
-    font-family: "黑体";
-    width: 75%;
-    flex:1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.my_skill span{
-    line-height: 20px;
-    letter-spacing: 1px;
-    color: #111111;
-    font-family: '幼圆';
-    font-weight: 600;
-    text-align: center;
-}
-.my_skill img{
-    margin-right:20px;
-}
-.my_li .erweima{
-    background:url('../images/erweima.jpg') no-repeat center;
-    background-size:cover; 
-}
-#my_ul .my_li .callme{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 75%;
-}
-.callme h5{
-    font-size:21px;
-    font-family: '黑体';
-    font-weight: 600;
-    margin:5px 0;
-    display: flex;
-    align-items: center;
-    letter-spacing: 1px;
-}
-.callme h5 img{
-    margin-right: 20px;
-}
-
- .music{
-        position:fixed;
-        top: 5px;
-        right: 10px;
-        z-index: 99;
-        width: 40px;
-        height: 40px;
-        background:url('../images/music1.svg') no-repeat;
-        background-size:contain;
-        animation: rotating 1.2s linear infinite;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
 
-@-webkit-keyframes rotating {
-    from {
-        -webkit-transform: rotate(0)
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
     }
-
-    to {
-        -webkit-transform: rotate(360deg)
-    }
-}
-
-@keyframes rotating {
-    from {
-        transform: rotate(0)
-    }
-
-    to {
-        transform: rotate(360deg)
-    }
-}
-
-@-moz-keyframes rotating {
-    from {
-        -moz-transform: rotate(0)
-    }
-
-    to {
-        -moz-transform: rotate(360deg)
-    }
-}

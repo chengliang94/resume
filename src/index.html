@@ -6,18 +6,19 @@
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
-
 	<!-- Swiper -->
-    <div class="swiper-container">
-   <!--  <audio loop="" src="http://res1.eqh5.com/o_1b17aom36154i38p5el1jfm1cppg.mp3" id="media" autoplay="" preload="auto"></audio> -->
+    <div class="swiper-container" id="swiper1">
+     <audio loop="" src="http://res1.eqh5.com/o_1b17aom36154i38p5el1jfm1cppg.mp3" id="media" autoplay="" ></audio>
+    <div class="music">
+    </div>
         <div class="swiper-wrapper">
             <div class="swiper-slide"  id="page_one">
-            	<figure id="myself" class="ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+            	<figure id="myself" class="ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0s">
             		<div class="mypic"></div>
             		<figcaption>
             			<p style="font-family:'微软雅黑'">程 亮</p>
-						<p>个人简历</p>	
-            		</figcaption>           		
+						<p>个人简历</p>
+            		</figcaption>
             	</figure>
             	<div id="tel" class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.6s">
             			<P>Tel:15156212969</P>
@@ -37,23 +38,23 @@
 					<li class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay="1.8s">15156212969</li>
 					<li class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay="2.1s">791571782@qq.com</li>
 				</ul>
-				<!-- <div class="info_word ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="2.4s">
-					<span>所谓成功，就是在平凡中做出不平凡的坚持。　---------拿破仑</span>
-				</div> -->
+				<div class="info_word ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="2.4s">
+						<span>所谓成功，就是在平凡中做出不平凡的坚持。　---------拿破仑</span>
+					</div> 
             </div>
             <div class="swiper-slide" id="page_three">
             	<div class="riot ani" swiper-animate-effect="tada" swiper-animate-duration="0.8s" swiper-animate-delay="0.3s"></div>
             	<div id="dev">
             		<div class="dev_left">
-            			<h1 class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="1.2s">服共阿道夫那几那是哦等你你先冲借款女偶爱你都阿森纳第阿森纳滴哦你看SVN</h1>
-            			<h1 class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="1.8s">服共阿道夫那几那是哦等你你先冲借款女偶爱你都阿森纳第阿森纳滴哦你看SVN</h1>
+            			<h1 style="margin-top:0px;" class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="1.2s">企业网站(江苏银壹世)：金融投资项目耗时3周，主要处理前端页面及程序嵌套，当时并未要求移动端适配，故该网站只适应于PC端应用。应用技术：Html、Css2、Coldfusion等</h1>
+            			<h1 class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="1.8s">平台门户(玛萨玛索)；男装购物网站，项目初建耗时4月，从页面设计到前端实现，从本地测试到平台上线等全程处理。应用技术：Html、Css2、Javascript、Jquery、Coldfusion等</h1>
             		</div>
             		<div class="dev_middle ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1.2s" swiper-animate-delay="1s">
-            			
+
             		</div>
             		<div class="dev_right">
-            			<h1 style="margin-top:55px;" class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="1.5s">服共阿道夫那几那是哦等你你先冲借款女偶爱你都阿森纳第阿森纳滴哦你看SVN</h1>
-            			<h1 class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="2.1s">服共阿道夫那几那是哦等你你先冲借款女偶爱你都阿森纳第阿森纳滴哦你看SVN</h1>
+            			<h1 style="margin-top:60px;" class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="1.5s">移动平台（政教通）：儿童健康成长护航者；项目初建耗时3月，主要包括数据支撑平台的建设、移动端Hybrid模式的应用及开发。应用技术：Html5、Css3、Jquery、AngularJs、Java等</h1>
+            			<h1 class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="2.1s">之后的大部分时间的主要工作都是运营和代码维护</h1>
             		</div>
             	</div>
             </div>
@@ -68,23 +69,41 @@
 
 
 
-	<div id="mainContainer">
+	 <div id="mainContainer">
+		<div class="music">
+    	</div>
 		<div id="header">我的技能</div>
-
 		<div id="wrapper">
-			<div id="scroller">
-				<ul>
-					
+				<ul id="my_ul">
+					<li class="my_li" id="my_li_one">
+
+					</li>
+					<li class="my_li hide_li" id="my_li_two">
+					</li>
+					<li class="my_li" id="my_li_three">
+
+					</li>
+					<li class="my_li" style="margin-top:5%;">
+						<div class="my_skill erweima"></div>
+						<div class="my_skill callme">
+							<h5><img src="./images/name.svg">程亮</h5>
+							<h5><img src="./images/QQ.svg">791571782</h5>
+							<h5><img src="./images/email.svg">791571782@qq.com</h5>
+							<h5><img src="./images/tel.svg">15156212969</h5>
+						</div>
+					</li>
 				</ul>
-			</div>
 		</div>
-
-		<div id="footer"></div>
-
-
+		<footer>
+				<ul style="padding:0;margin:0" >
+					<li class="listall" style="background:white;color:black;">技能</li>
+					<li class="listall">经历</li>
+					<li class="listall">项目</li>
+					<li class="listall">联系我</li>
+				</ul>
+		</footer>
 	</div>
-
-	
 	<script type="text/javascript" src="js/index.js"></script>
+
 </body>
 </html>

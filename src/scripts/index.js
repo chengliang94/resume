@@ -58,7 +58,7 @@ $.post('http://localhost:8000/skill',function(data){
 $.post('http://localhost:8000/skill',function(data){
 	var html="";
 	for(var i=0;i<data.length-4;i++){
-		html+="<div class='my_skill'><img src='./images/project1.svg' style='margin-right:5px;'>"+data[i].project+"</div>"
+		html+="<div class='my_skill'><img src='./images/project1.svg'>"+data[i].project+"</div>"
 	}
 	$("#my_li_three").html(html);
 })

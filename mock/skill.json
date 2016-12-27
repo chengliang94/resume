@@ -1,12 +1,12 @@
 ﻿[
 	{
 		"category":"了解HTML4、HTML5、ES5、ES6、CommonJS、CMD、AMD等规范1年",
-		"experience":"2012进入大学学习的是计算机应用专业,参加学院的编程比赛,取得较好的成绩",
+		"experience":"大学学习的是计算机应用专业,参加学院的设计比赛取得过成绩一般；",
 		"project":"企业网站:江苏银壹世(http://www.yinyishi.com/);江苏银壹世官方网站；详细介绍了其公司的主要情况;项目耗时3周，主要处理前端页面设计及程序嵌套管理；团队：1设计，2前段，3后端；技术应用：jQuery，bootstrap，hcj等。"
 	},
 	{
 		"category":"熟悉Jquery、Zepto、AngularJs、Recat、Avalon等框架使用时间2年",
-		"experience":"2013年进入一家公司实习,实习的时间不长,但是让我萌生了对html设计的兴趣,并决定以后从事该方面的职业",
+		"experience":"2013年进入一家公司实习,实习的时间不长,但是让我萌生了对网页设计的兴趣,实习结束后继续留在该公司工作；",
 		"project":"电商网站:玛萨玛索(http://www.masamasuo.com/);男子品牌网站;长期维护，功能迭代，包括平台整体UI改进以及功能模块的增加与性能的优化；团队：2设计、2前段、4后端；技术应用：gulp模块开发，sass代码编译，git代码管理，html5/css3，jquery，原生javascript，easyui，hcj等。"
 		
 	},
@@ -21,7 +21,7 @@
 	},
 	{
 		"category":"熟悉Jquery menu plugin、Jquery nav plugin、zepto emoji-expression-plugin等插件使用时间2年",
-		"experience":"之后的时间完成了几项大小不一的项目,也积累一些心得"
+		"experience":"之后的时间进入了几家不同类型的公司，并和不同的团队完成了一些多种类项目。"
 	},
 	{
 		"category":"精通Fixed、Fulid、Flex、Responsive布局应用时间3年"

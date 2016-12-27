@@ -36,9 +36,9 @@ footer ul li{
             flex:1;
             display: flex;
             color:white;
-            font-size:18px;
+            font-size:15px;
             font-weight: 700;
-            flex-direction:row;
+            flex-direction:column;
             font-family: "黑体";
             height: 100%;
  }
@@ -125,10 +125,11 @@ footer ul li{
 #my_ul .my_li .my_skill{
     font-size: 14px;
     font-family: "黑体";
-    width: 75%;
+    width: 79%;
     flex:1;
     display: flex;
     justify-content: center;
+    color:#222222;
     align-items: center;
 }
 .my_skill span{
@@ -140,7 +141,7 @@ footer ul li{
     text-align: center;
 }
 .my_skill img{
-    margin-right:20px;
+    margin-right:10px;
 }
 .my_li .erweima{
     background:url('../images/erweima.jpg') no-repeat center;

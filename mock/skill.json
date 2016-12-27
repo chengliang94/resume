@@ -2,18 +2,18 @@
 	{
 		"category":"了解HTML4、HTML5、ES5、ES6、CommonJS、CMD、AMD等规范1年",
 		"experience":"2012进入大学学习的是计算机应用专业,参加学院的编程比赛,取得较好的成绩",
-		"project":"企业网站:江苏银壹世(http://www.horays.com/);江苏银壹世公司的官方网站，详细介绍了其公司的主要情况;项目耗时3周，主要处理前端页面及程序嵌套，当时并未要求移动端适配，故该网站只适应于PC端应用"
+		"project":"企业网站:江苏银壹世(http://www.yinyishi.com/);江苏银壹世官方网站；详细介绍了其公司的主要情况;项目耗时3周，主要处理前端页面设计及程序嵌套管理；团队：1设计，2前段，3后端；技术应用：jQuery，bootstrap，hcj等。"
 	},
 	{
 		"category":"熟悉Jquery、Zepto、AngularJs、Recat、Avalon等框架使用时间2年",
 		"experience":"2013年进入一家公司实习,实习的时间不长,但是让我萌生了对html设计的兴趣,并决定以后从事该方面的职业",
-		"project":"电商网站:玛萨玛索(http://www.masamasuo.com/);男子品牌网站;长期维护，功能迭代，包括平台整体UI改进以及功能模块的增加与性能的优化"
+		"project":"电商网站:玛萨玛索(http://www.masamasuo.com/);男子品牌网站;长期维护，功能迭代，包括平台整体UI改进以及功能模块的增加与性能的优化；团队：2设计、2前段、4后端；技术应用：gulp模块开发，sass代码编译，git代码管理，html5/css3，jquery，原生javascript，easyui，hcj等。"
 		
 	},
 	{
 		"category":"熟悉Mui、Yo、Ionic等框架使用时间2年",
 		"experience":"工作并学习操作团队化项目,并在一段时间后我与我的第一个团队完成了我人生的第一个项目",
-		"project":"移动平台:政教通(http://www.zhengjiaotong.com/);儿童健康成长护航者;项目初建耗时3月，主要包括数据支撑平台的建设、移动端Hybrid模式的应用及开发"
+		"project":"移动平台:政教通(http://www.zhengjiaotong.com/);webAPP项目；儿童健康成长护航者;项目初建耗时3月，主要包括数据支撑平台的建设、移动端Hybrid模式的应用及开发；团队：3设计，4前段，5后台；应用技术：iscroll，swiper，zepto等框架及gulp模块开发；"
 	},
 	{
 		"category":"熟悉Swiper、Iscroll等类库使用时间2年",

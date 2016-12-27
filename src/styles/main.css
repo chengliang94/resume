@@ -36,7 +36,7 @@ footer ul li{
             flex:1;
             display: flex;
             color:white;
-            font-size:18px;
+            font-size:15px;
             font-weight: 700;
             flex-direction:row;
             font-family: "黑体";
@@ -125,10 +125,10 @@ footer ul li{
 #my_ul .my_li .my_skill{
     font-size: 14px;
     font-family: "黑体";
-    width: 75%;
+    width: 87%;
     flex:1;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 .my_skill span{
@@ -150,6 +150,7 @@ footer ul li{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content:center;
     width: 75%;
 }
 .callme h5{

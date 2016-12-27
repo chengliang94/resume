@@ -43,7 +43,7 @@ $("#page_four .detail_p").on('tap',function(){
 $.post('http://localhost:8000/skill',function(data){
 	var html="";
 	for(var i=0;i<data.length;i++){
-		html+="<div class='my_skill'><img src='./images/get.svg'>"+data[i].category+"</div>"
+		html+="<div class='my_skill' style='letter-spacing:1px;'><img src='./images/get.svg'>"+data[i].category+"</div>"
 	}
 	$("#my_li_one").html(html);
 })
@@ -58,7 +58,7 @@ $.post('http://localhost:8000/skill',function(data){
 $.post('http://localhost:8000/skill',function(data){
 	var html="";
 	for(var i=0;i<data.length-4;i++){
-		html+="<div class='my_skill'><img src='./images/project1.svg'>"+data[i].project+"</div>"
+		html+="<div class='my_skill' style='font-size:12px;'><img src='./images/project1.svg'>"+data[i].project+"</div>"
 	}
 	$("#my_li_three").html(html);
 })

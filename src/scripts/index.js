@@ -7,6 +7,7 @@ var Swiper = require('./common/libs/swiper/swiper.min.js');
 var swiperAni = require('./common/libs/swiper/swiper.animate1.0.2.min.js');
 var IScroll = require('./common/libs/iscroll/iscroll.js');
 
+
 // edit index
 $("#swiper1").show();
 $("#mainContainer").hide();
@@ -107,14 +108,14 @@ window.onload = function(){
         }
 
 
-         	$('button').eq(0).on('click',function(){
+      $('button').eq(0).on('click',function(){
         $.post('php/getsign.php',{url:window.location.href
            },function(text,status){
 		var pos=text.indexOf('<script type="text/javascript">');
         var objStr=text.substring(0,pos);
         var obj=JSON.parse(objStr);
-    
-    
+
+
   wx.config({
     debug: true,
     appId:obj.appId,
@@ -126,7 +127,6 @@ window.onload = function(){
       'chooseImage'
     ]
   });
- 
     // 在这里调用 API
       wx.chooseImage({
     count: 1, // 默认9
@@ -136,20 +136,20 @@ window.onload = function(){
         var localIds = res.localIds; // 返回选定照片的本地ID列表，localId可以作为img标签的src属性显示图片
     }
 
-    
-  });     
+
+  });
   });
     });
-        
-        
+
+
         $('button').eq(1).on('click',function(){
         $.post('php/getsign.php',{url:window.location.href
            },function(text,status){
 		var pos=text.indexOf('<script type="text/javascript">');
         var objStr=text.substring(0,pos);
         var obj=JSON.parse(objStr);
-    
-    
+
+
   wx.config({
     debug: true,
     appId:obj.appId,
@@ -161,7 +161,6 @@ window.onload = function(){
       'scanQRCode'
     ]
   });
- 
     // 在这里调用 API
      wx.scanQRCode({
     needResult: 0, // 默认为0，扫描结果由微信处理，1则直接返回扫描结果，
@@ -172,5 +171,4 @@ window.onload = function(){
 });
   });
     });
-        
- 
+

@@ -117,7 +117,7 @@ window.onload = function(){
 
 
   wx.config({
-    debug: true,
+    debug: false,
     appId:obj.appId,
     timestamp:obj.timestamp,
     nonceStr:obj.nonceStr,
@@ -151,7 +151,7 @@ window.onload = function(){
 
 
   wx.config({
-    debug: true,
+    debug: false,
     appId:obj.appId,
     timestamp:obj.timestamp,
     nonceStr:obj.nonceStr,

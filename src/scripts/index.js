@@ -2,7 +2,7 @@ var $ = require('./common/libs/zepto-modules/zepto');
 require('./common/libs/zepto-modules/touch');
 require('./common/libs/zepto-modules/event');
 require('./common/libs/zepto-modules/ajax');
-
+var wx = require('./common/libs/weixin-js-sdk');
 var Swiper = require('./common/libs/swiper/swiper.min.js');
 var swiperAni = require('./common/libs/swiper/swiper.animate1.0.2.min.js');
 var IScroll = require('./common/libs/iscroll/iscroll.js');
@@ -40,7 +40,7 @@ $("#page_four .detail_p").on('tap',function(){
 		document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
 })
 
-$.post('http://localhost:8000/skill',function(data){
+$.post('http://1.791571782.applinzi.com/www/mock/skill.json',function(data){
 	var html="";
 	for(var i=0;i<data.length;i++){
 		html+="<div class='my_skill' style='letter-spacing:1px;'><img src='./images/get.svg'>"+data[i].category+"</div>"
@@ -48,14 +48,14 @@ $.post('http://localhost:8000/skill',function(data){
 	$("#my_li_one").html(html);
 })
 
-$.post('http://localhost:8000/skill',function(data){
+$.post('http://1.791571782.applinzi.com/www/mock/skill.json',function(data){
 	var html="";
 	for(var i=0;i<data.length-2;i++){
 		html+="<div class='my_skill'><img src='./images/experience.svg'>"+data[i].experience+"</div>"
 	}
 	$("#my_li_two").html(html);
 })
-$.post('http://localhost:8000/skill',function(data){
+$.post('http://1.791571782.applinzi.com/www/mock/skill.json',function(data){
 	var html="";
 	for(var i=0;i<data.length-4;i++){
 		html+="<div class='my_skill' style='font-size:12px;'><img src='./images/project1.svg'>"+data[i].project+"</div>"
@@ -105,3 +105,72 @@ window.onload = function(){
                 }
             }
         }
+
+
+         	$('button').eq(0).on('click',function(){
+        $.post('php/getsign.php',{url:window.location.href
+           },function(text,status){
+		var pos=text.indexOf('<script type="text/javascript">');
+        var objStr=text.substring(0,pos);
+        var obj=JSON.parse(objStr);
+    
+    
+  wx.config({
+    debug: true,
+    appId:obj.appId,
+    timestamp:obj.timestamp,
+    nonceStr:obj.nonceStr,
+    signature:obj.signature,
+    jsApiList: [
+      // 所有要调用的 API 都要加到这个列表中
+      'chooseImage'
+    ]
+  });
+ 
+    // 在这里调用 API
+      wx.chooseImage({
+    count: 1, // 默认9
+    sizeType: ['original', 'compressed'], // 可以指定是原图还是压缩图，默认二者都有
+    sourceType: ['album', 'camera'], // 可以指定来源是相册还是相机，默认二者都有
+    success: function (res) {
+        var localIds = res.localIds; // 返回选定照片的本地ID列表，localId可以作为img标签的src属性显示图片
+    }
+
+    
+  });     
+  });
+    });
+        
+        
+        $('button').eq(1).on('click',function(){
+        $.post('php/getsign.php',{url:window.location.href
+           },function(text,status){
+		var pos=text.indexOf('<script type="text/javascript">');
+        var objStr=text.substring(0,pos);
+        var obj=JSON.parse(objStr);
+    
+    
+  wx.config({
+    debug: true,
+    appId:obj.appId,
+    timestamp:obj.timestamp,
+    nonceStr:obj.nonceStr,
+    signature:obj.signature,
+    jsApiList: [
+      // 所有要调用的 API 都要加到这个列表中
+      'scanQRCode'
+    ]
+  });
+ 
+    // 在这里调用 API
+     wx.scanQRCode({
+    needResult: 0, // 默认为0，扫描结果由微信处理，1则直接返回扫描结果，
+    scanType: ["qrCode","barCode"], // 可以指定扫二维码还是一维码，默认二者都有
+    success: function (res) {
+    var result = res.resultStr; // 当needResult 为 1 时，扫码返回的结果
+}
+});
+  });
+    });
+        
+ 
